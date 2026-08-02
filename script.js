@@ -203,6 +203,7 @@ clone.querySelector(".lead-address").innerHTML=lead.address;
 clone.querySelector(".lead-followup").innerHTML=lead.followup||"-";
 
 clone.querySelector(".lead-notes").innerHTML=lead.notes||"-";
+   console.log(lead);
 
 /* Status */
 
