@@ -337,3 +337,209 @@ class="row g-4"
 id="leadContainer">
 
 </div>
+<!-- ===========================
+Lead Card Template
+=========================== -->
+
+<template id="leadCardTemplate">
+
+<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+
+<div class="card lead-card shadow-sm h-100">
+
+<div class="card-body">
+
+<div class="d-flex justify-content-between align-items-start mb-3">
+
+<h5 class="lead-name mb-0"></h5>
+
+<span class="badge status-badge">
+
+None
+
+</span>
+
+</div>
+
+<p class="mb-2">
+
+<i class="bi bi-telephone-fill"></i>
+
+<span class="lead-mobile"></span>
+
+</p>
+
+<p class="mb-2">
+
+<i class="bi bi-geo-alt-fill"></i>
+
+<span class="lead-address"></span>
+
+</p>
+
+<p class="mb-2">
+
+<i class="bi bi-calendar-event"></i>
+
+<span class="lead-followup"></span>
+
+</p>
+
+<p class="mb-3">
+
+<i class="bi bi-chat-left-text"></i>
+
+<span class="lead-notes"></span>
+
+</p>
+
+<div class="mb-3">
+
+<select class="form-select status-select">
+
+<option value="None">
+
+None
+
+</option>
+
+<option value="Contact in Future">
+
+Contact in Future
+
+</option>
+
+<option value="Negotiation">
+
+Negotiation
+
+</option>
+
+<option value="Proposal Sent">
+
+Proposal Sent
+
+</option>
+
+<option value="Call Attempted">
+
+Call Attempted
+
+</option>
+
+</select>
+
+</div>
+
+<div class="d-grid gap-2">
+
+<button class="btn btn-success whatsappBtn">
+
+<i class="bi bi-whatsapp"></i>
+
+WhatsApp
+
+</button>
+
+<button class="btn btn-primary callBtn">
+
+<i class="bi bi-telephone"></i>
+
+Call
+
+</button>
+
+<div class="d-flex gap-2">
+
+<button class="btn btn-warning flex-fill editBtn">
+
+<i class="bi bi-pencil-square"></i>
+
+Edit
+
+</button>
+
+<button class="btn btn-danger flex-fill deleteBtn">
+
+<i class="bi bi-trash"></i>
+
+Delete
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</template>
+
+<!-- ===========================
+Firebase
+=========================== -->
+
+<script type="module">
+
+import { initializeApp }
+
+from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+
+import {
+
+getFirestore,
+
+collection,
+
+addDoc,
+
+getDocs,
+
+updateDoc,
+
+deleteDoc,
+
+doc,
+
+query,
+
+orderBy
+
+}
+
+from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
+
+const firebaseConfig = {
+
+apiKey:"AIzaSyD1k3vMvPt3Rqi8JgAl56DrO82vXn3WbAo",
+
+authDomain:"nicrm-1afa3.firebaseapp.com",
+
+projectId:"nicrm-1afa3",
+
+storageBucket:"nicrm-1afa3.firebasestorage.app",
+
+messagingSenderId:"1087524542055",
+
+appId:"1:1087524542055:web:c46c43ba9849e3552566c2"
+
+};
+
+const app=initializeApp(firebaseConfig);
+
+const db=getFirestore(app);
+
+/* Remaining JavaScript
+(next part) */
+
+</script>
+
+<script src="script.js" type="module"></script>
+
+</body>
+
+</html>
