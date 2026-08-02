@@ -659,7 +659,7 @@ a.download="Sample-Leads.csv";
 a.click();
 
 }
-console.log(lead.mobile);
+
 /* ==========================================
 END OF SCRIPT
 ========================================== */
