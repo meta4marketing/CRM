@@ -195,7 +195,9 @@ card.dataset.id=lead.id;
 clone.querySelector(".lead-name").innerHTML=lead.name;
 
 clone.querySelector(".lead-mobile").innerHTML=lead.mobile;
-   
+
+clone.querySelector(".callBtn").href = "tel:" + lead.mobile;
+
 clone.querySelector(".lead-address").innerHTML=lead.address;
 
 clone.querySelector(".lead-followup").innerHTML=lead.followup||"-";
