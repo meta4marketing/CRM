@@ -1,308 +1,67 @@
-/* ===========================================
-   NI CRM
-   style.css
-=========================================== */
-
-:root{
-
---primary:#0d6efd;
---success:#198754;
---danger:#dc3545;
---warning:#ffc107;
---info:#0dcaf0;
-
---bg:#f4f6f9;
-
---card:#ffffff;
-
---text:#212529;
-
---radius:16px;
-
-}
-
 body{
 
-background:var(--bg);
-
-font-family:Segoe UI,Tahoma,sans-serif;
-
-color:var(--text);
+background:#f5f5f5;
 
 }
 
-/* =======================
-Dashboard
-======================= */
 
-.dashboard-card{
+
+.sidebar{
+
+min-height:100vh;
+
+background:#212529;
+
+color:white;
+
+padding:20px;
+
+}
+
+
+
+.sidebar a{
+
+display:block;
+
+color:white;
+
+text-decoration:none;
+
+padding:12px;
+
+margin:5px 0;
+
+border-radius:5px;
+
+}
+
+
+
+.sidebar a:hover{
+
+background:#495057;
+
+}
+
+
+
+.content{
+
+padding:20px;
+
+}
+
+
+
+.box{
+
+padding:25px;
+
+text-align:center;
 
 border:none;
 
-border-radius:var(--radius);
-
-transition:.3s;
-
-}
-
-.dashboard-card:hover{
-
-transform:translateY(-4px);
-
-}
-
-.total-card{
-
-background:#ffffff;
-
-}
-
-.future-card{
-
-background:#d9f1ff;
-
-}
-
-.negotiation-card{
-
-background:#fff4c2;
-
-}
-
-.proposal-card{
-
-background:#dff8d9;
-
-}
-
-.call-card{
-
-background:#ffdcdc;
-
-}
-
-.dashboard-card h2{
-
-font-weight:700;
-
-margin-top:10px;
-
-}
-
-/* =======================
-Form
-======================= */
-
-.card{
-
-border:none;
-
-border-radius:18px;
-
-}
-
-.card-header{
-
-background:#ffffff;
-
-font-weight:700;
-
-}
-
-.form-control,
-
-.form-select{
-
-border-radius:10px;
-
-}
-
-.form-control:focus,
-
-.form-select:focus{
-
-box-shadow:none;
-
-border-color:var(--primary);
-
-}
-
-/* =======================
-Lead Card
-======================= */
-
-.lead-card{
-
-border-radius:18px;
-
-transition:.3s;
-
-border:none;
-
-}
-
-.lead-card:hover{
-
-transform:translateY(-6px);
-
-}
-
-.status-badge{
-
-font-size:12px;
-
-padding:6px 12px;
-
-}
-
-/* =======================
-Status Colors
-======================= */
-
-.status-none{
-
-background:#ffffff;
-
-border-left:8px solid #dee2e6;
-
-}
-
-.status-future{
-
-background:#d9f1ff;
-
-border-left:8px solid #0dcaf0;
-
-}
-
-.status-negotiation{
-
-background:#fff4c2;
-
-border-left:8px solid #ffc107;
-
-}
-
-.status-proposal{
-
-background:#dff8d9;
-
-border-left:8px solid #198754;
-
-}
-
-.status-call{
-
-background:#ffdcdc;
-
-border-left:8px solid #dc3545;
-
-}
-
-/* =======================
-Buttons
-======================= */
-
-.btn{
-
-border-radius:10px;
-
-}
-
-.whatsappBtn{
-
-background:#25D366;
-
-border:none;
-
-}
-
-.whatsappBtn:hover{
-
-background:#1da851;
-
-}
-
-.callBtn{
-
-background:#0d6efd;
-
-border:none;
-
-}
-
-/* =======================
-Lead Info
-======================= */
-
-.lead-name{
-
-font-size:20px;
-
-font-weight:700;
-
-}
-
-.lead-mobile,
-
-.lead-address,
-
-.lead-followup,
-
-.lead-notes{
-
-word-break:break-word;
-
-}
-
-/* =======================
-Search
-======================= */
-
-#searchInput{
-
-height:48px;
-
-}
-
-#statusFilter{
-
-height:48px;
-
-}
-
-/* =======================
-Responsive
-======================= */
-
-@media(max-width:768px){
-
-.dashboard-card{
-
-margin-bottom:15px;
-
-}
-
-.lead-name{
-
-font-size:18px;
-
-}
-
-}
-
-@media(max-width:576px){
-
-.card-body{
-
-padding:18px;
-
-}
-
-.btn{
-
-font-size:14px;
-
-}
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 
 }
